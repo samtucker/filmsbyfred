@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>Films by Fred.</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" type="text/css" href="main.css">
+  	<link rel="stylesheet" type="text/css" href="my-photos.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="myFunction()">
+	<header class="container">
+		<div class="row">
+			<h1 class="col-sm-4" id="bubble">
+			<a class="nav-link" href="index.html">Films by Fred.</a>
+			</h1>
+		<nav class="col-sm-8 text-right">
+			<p>
+				<a class="nav-link" href="about-me.html">about me</a>
+			</p>
+			<p>
+				<a class="nav-link" href="my-videos.html">my videos</a>
+			</p>
+			<p>
+				<a class="nav-link" href="my-photos.html">my photos</a>
+			</p>
+			<p>
+				<a class="nav-link" href="contact.html">contact</a>
+			</p>
+		</nav>
+		</div>
+	</header>
+	<section class="container" id="photos">
+		<div class="row" id="row1">
+			<figure class="col-sm-4">
+				<img class="photo" id="load1" src="1.jpg" alt="Sicily, by Fred" onclick="openModal();currentSlide(1)"/>
+			</figure>
+			<figure class="col-sm-4">
+				<img class="photo" id="load2" src="2.jpg" alt="Thailand, by Fred" onclick="openModal();currentSlide(2)"/>
+			</figure>
+			<figure class="col-sm-4">
+				<img class="photo" id="load3" src="3.jpg" alt="Bangkok, by Fred" onclick="openModal();currentSlide(3)"/>
+			</figure>
+		</div>
+		<div class="row" id="row2">
+			<figure class="col-sm-4">
+				<img class="photo" id="load4" src="4.jpg" alt="Palmero, by Fred" onclick="openModal();currentSlide(4)"/>
+			</figure>
+			<figure class="col-sm-4">
+				<img class="photo" id="load5" src="5.jpg" alt="Oxfordshire, by Fred" onclick="openModal();currentSlide(5)"/>
+			</figure>
+			<figure class="col-sm-4">
+				<img class="photo" id="load6" src="6.jpg" alt="Camdem, by Fred" onclick="openModal();currentSlide(6)"/>
+			</figure>
+		</div>
+		<div class="row" id="row3">
+			<figure class="col-sm-4">
+				<img class="photo" id="load7" src="7.jpg" alt="St Tropez, by Fred" onclick="openModal();currentSlide(7)"/>
+			</figure>
+			<figure class="col-sm-4">
+				<img class="photo" id="load8" src="8.jpg" alt="Newbury, by Fred" onclick="openModal();currentSlide(8)"/>
+			</figure>
+			<figure class="col-sm-4">
+				<img class="photo" id="load9" src="9.jpg" alt="Elephant land, by Fred" onclick="openModal();currentSlide(9)"/>
+			</figure>
+		</div>
+		<div class="row" id="row4">
+			<figure class="col-sm-4">
+				<img class="photo" id="load10" src="10.jpg" alt="Palmero, by Fred" onclick="openModal();currentSlide(10)"/>
+			</figure>
+			<figure class="col-sm-4">
+				<img class="photo" id="load11" src="11.jpg" alt="Oxfordshire, by Fred" onclick="openModal();currentSlide(11)"/>
+			</figure>
+			<figure class="col-sm-4">
+				<img class="photo" id="load12" src="12.jpg" alt="Camdem, by Fred" onclick="openModal();currentSlide(12)"/>
+			</figure>
+		</div>
+		<div class="row" id="row5">
+			<figure class="col-sm-4">
+				<img class="photo" id="load13" src="13.jpg" alt="Palmero, by Fred" onclick="openModal();currentSlide(13)"/>
+			</figure>
+			<figure class="col-sm-4">
+				<img class="photo" id="load14" src="14.jpg" alt="Oxfordshire, by Fred" onclick="openModal();currentSlide(14)"/>
+			</figure>
+			<figure class="col-sm-4">
+				<img class="photo" id="load15" src="15.jpg" alt="Camdem, by Fred" onclick="openModal();currentSlide(15)"/>
+			</figure>
+		</div>
+	</section>
+	<div id="myModal" class="modal">
+		<span class="close-cursor" onclick="closeModal()">X</span>
+  		<div class="modal-content">
+  			<div class="mySlides">
+      			<div class="numbertext">1 / 9</div>
+        		<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="1.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">2 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="2.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">3 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="3.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">4 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="4.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">5 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="5.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">6 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="6.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">7 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="7.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">8 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="8.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">9 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="9.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">9 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="10.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">9 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="11.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">9 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="12.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">9 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="13.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">9 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="14.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<div class="mySlides">
+      			<div class="numbertext">9 / 9</div>
+      			<a href="https://www.foap.com/users/filmsbyfred?page=1" target="_blank">
+        			<img src="15.jpg" style="width:100%">
+        		</a>
+    		</div>
+    		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    		
+    		
+    	</div>
+	</div>
+	
+	
+	<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+	
+	
+	
+
+	
+<div id="snackbar">Click on the pictures to find out more...</div>
+<script>
+function myFunction() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar")
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+	
+	<footer class="container">
+  <div class="row">
+    <p class="col-sm-4">&copy; 2016 Films by Fred</p>
+    <ul class="col-sm-8">
+      <li class="col-sm-1">
+      	<img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg">
+      </li>
+      <li class="col-sm-1">
+      	<a href="https://www.facebook.com/freddie.armstrong.90">
+      		<img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg">
+      	</a>
+      </li>
+      <li class="col-sm-1">
+      	<a href="https://www.instagram.com/freddiearmstrong/">
+      		<img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg">
+      	</a>
+      </li>
+    </ul>
+  </div>
+  </footer>
+
+
+
+</body>
+</html>
+  
+  
+	

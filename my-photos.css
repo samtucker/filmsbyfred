@@ -1,0 +1,237 @@
+header {
+	border-bottom: 1px rgb(51,51,51) solid;
+	margin-bottom: 10px;
+}
+
+footer {
+	border-top: 1px rgb(51,51,51) solid;
+	margin-top: 20px;
+}	
+
+#row1, #row2, #row3 {
+	opacity: 0;
+}
+
+@keyframes load {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+#row1 {
+	animation-name: load;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#row2 {
+	animation-name: load;
+	animation-duration: 4s;
+	animation-delay: 1.7s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#row3 {
+	animation-name: load;
+	animation-duration: 4s;
+	animation-delay: 3s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.photo:hover {
+	opacity: 0.95;
+	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes popup {
+	from {left: 50px}
+	to {left: -300px}
+}
+
+
+
+#snackbar {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px;
+    
+}
+
+#snackbar.show {
+    visibility: visible;
+	-webkit-animation: fadein 1s, fadeout 1s 2.5s;
+    animation: fadein 1s, fadeout 1s 2.5s;
+
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 60%;
+	max-width: 1200px;
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+
+.close-cursor {
+  z-index: 2;
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close-cursor:hover {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff; 
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  font-size: 20px;
+  width: 50%;
+}
+
+img .demo {
+  opacity: 0.6;
+  height:32px;
+  width: 50px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}

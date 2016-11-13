@@ -1,0 +1,247 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+p {
+	color: rgb(51,51,51);
+}
+
+header {
+  padding: 10px 0;
+}
+
+header p {
+	text-align: center;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 a {
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+  color: rgb(51,51,51);
+}
+
+header h1 a:hover {
+	text-decoration: none;
+	color: rgb(54,54,54);
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes trans {
+	from {color: rgb(250,250,250);}
+	to {color: rgb(51,51,51);}
+}
+
+.nav-link {
+	animation-name: trans;
+	animation-duration: 4s;
+} 
+
+header p {
+  padding: 10px 20px;
+  margin: 0;
+  text-decoration: none;
+}
+
+header a {
+	color: rgb(51,51,51);
+	
+}
+
+header p:hover {
+	padding-top: 7px;
+	text-decoration: none;
+	color: rgb(49,49,49);
+	text-shadow: 0px 0px 1px 0px #000000;
+	
+}
+
+header a:hover {
+	text-decoration: none;
+	color: rgb(51,51,51);
+}
+
+
+#home-page {
+  display: flex;
+  align-items: center;
+  background-image: url('cover.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  margin-bottom: 30px;
+}
+
+@keyframes test {
+	from {padding-bottom: 40px}
+	to {padding-bottom: 0px}
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 300;
+  font-family: 'Lora';
+  margin: 0;
+  animation-name: test;
+  animation-duration: 3s;
+  /*animation-delay: 10s;*/
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: rgba(255, 255, 255, 0.30);
+  font-family: 'Oxygen', 'Roboto';
+  font-size: 18px;
+  font-weight: 100;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+@keyframes button {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+#home-button {
+  border-radius: 3px;
+  border: 1.5px rgb(51,51,51) solid;
+  color: #fff;
+  text-shadow: none;
+  background: none;
+  animation-name: button;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#home-button:hover {
+  color: #ffffff;
+  background-color: rgb(239,114,52);
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+#subheading h2 {
+	margin: auto;
+	text-align: center;
+	border-bottom: 1.5px rgb(222,222,222) solid;
+	font-weight: 400;
+	font-size: 20px;
+	padding-bottom: 15px;
+	width: 30%
+}
+
+
+figure p {
+	font-weight: 500;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.countryPicture {
+	transition: opacity 1.5s linear 0s;
+}
+
+.countryPicture:hover {
+	opacity: 0.5;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+}
+
+footer li img:hover {
+	border: 1px solid navy;
+	border-radius: 3px;
+}
+
+/*for about me page*/
+
+#video-button {
+	color: rgb(51,51,51);
+	border-radius: 2px;
+	height: 50px;
+	width: 180px;
+	padding-top:10px;
+	background-color: #e6e6e6;
+	border: 3px rgb(51,51,51) solid;
+	margin-top:30px;
+	transition: 0.4s;
+}
+
+#video-button:hover {
+	color: #fff;
+	border-radius: 2px;
+	height: 50px;
+	width: 180px;
+	padding-top:10px;
+	background-color: rgb(51,51,51);
+	border: 3px rgb(51,51,51) solid;
+	margin-top:30px;
+}
+
+.p-about-me {
+	margin-top: 20px;
+	font-weight:350;
+	font-size: 18px;
+}
+
+#about-me {
+	font-size:25px;
+}
+
+#video-title {
+	color: rgb(51,51,51);
+	margin: auto;
+	width: 150px;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+}
+
+#video-title h3 {
+	border-bottom: 1.5px rgb(222,222,222) solid;
+}
+

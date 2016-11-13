@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>Films by Fred.</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+  	header {
+  		border-bottom: 1px rgb(51,51,51) solid;
+  		margin-bottom: 5px;
+  	}
+  	footer {
+  		border-top: 1px rgb(51,51,51) solid;
+  		margin-top: 20px;
+  	}	
+  	video {
+  		margin-bottom:20px;
+  	}
+  	@keyframes load-videos {
+  		from {opacity: 0}
+  		to {opacity: 1}
+  	}
+  	#bubble {
+  		animation-name: load-videos;
+  		animation-duration: 2s;
+  		animation-delay: 1s;
+  		opacity: 0;
+  		-webkit-animation-fill-mode: forwards;
+  	}
+  	h3 a{
+  		text-decoration: none;
+  		color: rgb(51,51,51);
+  	}
+  	h3 a:hover {
+  		text-decoration: none;
+  		color: rgb(51,51,51);
+  	}
+  	
+  	
+  	
+  </style>
+   
+</head>
+<body>
+	<header class="container">
+		<div class="row">
+			<h1 class="col-sm-4" id="bubble">
+			<a class="nav-link" href="index.html">Films by Fred.</a>
+			</h1>
+		<nav class="col-sm-8 text-right">
+			<p>
+				<a class="nav-link" href="about-me.html">about me</a>
+			</p>
+			<p>
+				<a class="nav-link" href="my-videos.html">my videos</a>
+			</p>
+			<p>
+				<a class="nav-link" href="my-photos.html">my photos</a>
+			</p>
+			<p>
+				<a class="nav-link" href="contact.html">contact</a>
+			</p>
+		</nav>
+		</div>
+	</header>
+	<section class="container" id="bubble">
+  		<div class="row">
+			<div id="video-title">
+				<h3 id="video-title"><a name="video-sicily">Sicily.</a></h3>
+			</div>
+  			<video class="col-sm-12" controls>
+  				<source src="test.mp4" type="video/mp4">
+  				<source src="test.mp4" type="video/ogg">
+			</video>
+		</div>
+	
+  		<div class="row">
+  			<div id="video-title">
+  				<h3 id="video-title"><a name="video-egypt">Egypt.</a></h3>
+  			</div>
+			<video id="mp4" class="col-sm-12" controls>
+  				<source src="test2.mp4" type="video/mp4">
+  				<source src="test2.mp4" type="video/ogg">
+			</video>
+		</div>
+	
+	
+  		<div class="row">
+  		<div class="bubble">
+  			<div id="video-title">
+  				<h3 id="video-title"><a name="video-spain">Spain.</a></h3>
+  			</div>
+			<video class="col-sm-12"  controls>
+  				<source src="test3.mov" type="video/mp4">
+  				<source src="test3.mov" type="video/ogg">
+			</video>
+		</div>
+		</div>
+	</section>
+	
+ <footer class="container">
+  <div class="row">
+    <p class="col-sm-4">&copy; 2016 Films by Fred</p>
+    <ul class="col-sm-8">
+      <li class="col-sm-1">
+      	<img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg">
+      </li>
+      <li class="col-sm-1">
+      	<a href="https://www.facebook.com/freddie.armstrong.90">
+      		<img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg">
+      	</a>
+      </li>
+      <li class="col-sm-1">
+      	<a href="https://www.instagram.com/freddiearmstrong/">
+      		<img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg">
+      	</a>
+      </li>
+    </ul>
+  </div>
+  </footer>
+
+
+
+</body>
+</html>
+
